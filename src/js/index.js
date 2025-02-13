@@ -2,6 +2,10 @@ import VisualCrossingInterface from './virtual_crossing';
 
 let visualCrossing = new VisualCrossingInterface(window);
 
-visualCrossing.fetchLocationWeather('London,UK').catch(err => {
-    console.warn(err);
-});
+visualCrossing.fetchLocationWeather('Tulsa,OK')
+    .then(res => {
+	console.log(res);
+    })
+    .catch(err => {
+	console.warn(err);
+    });
