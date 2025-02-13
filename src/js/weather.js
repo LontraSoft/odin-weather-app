@@ -1,5 +1,19 @@
-export default class Weather {
-    constructor() {
-
+class TemperatureData {
+    constructor(temperature, max, min) {
+	this.temperature = temperature;
+	this.max = max;
+	this.min = min;
     }
 }
+
+class WeatherData {
+    constructor(conditions, feelsLikeTemp, temp, humidity, windSpeed) {
+	this.conditions = conditions;
+	this.feelsLikeTemp = feelsLikeTemp;
+	this.temp = temp;
+	this.humidity = humidity;
+	this.windSpeed = windSpeed;
+    }
+}
+
+export { TemperatureData, WeatherData };
