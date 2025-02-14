@@ -18,7 +18,7 @@ export default class VisualCrossingInterface {
 	const HUMIDITY = dayData.humidity;
 	const WIND = dayData.windspeed;
 
-	const TEMPERATURE_DATA = new TemperatureData(TEMPERATURE,TEMPERATURE_MIN, TEMPERATURE_MAX)
+	const TEMPERATURE_DATA = new TemperatureData(TEMPERATURE, TEMPERATURE_MIN, TEMPERATURE_MAX)
 	const FEELS_LIKE_DATA = new TemperatureData(FEELS_LIKE_TEMP, FEELS_LIKE_TEMP_MIN, FEELS_LIKE_TEMP_MAX);
 	const WEATHER_DATA = new WeatherData(CONDITIONS, FEELS_LIKE_DATA, TEMPERATURE_DATA, HUMIDITY, WIND);
 	
