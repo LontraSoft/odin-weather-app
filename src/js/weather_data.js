@@ -1,6 +1,6 @@
 class TemperatureData {
-    constructor(temperature, min, max) {
-	this.temperature = temperature;
+    constructor(current, min, max) {
+	this.current = current;
 	this.min = min;
 	this.max = max;
     }
