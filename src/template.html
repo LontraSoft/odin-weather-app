@@ -6,6 +6,58 @@
     <title>Odin Weather App</title>
   </head>
   <body>
+    <h1>Odin Weather App</h1>
+    <main>
+      <section class="condition-section">
+	<h2>Condition</h2>
+	<b class="condition-text"></b>
+      </section>
 
+      <section class="Temperature-container">
+	<h2>Temperature</h2>
+	<table>
+	  <tr>
+	    <th/>
+	    <th>Min</th>
+	    <th>Current</th>
+	    <th>Max</th>
+	  </tr>
+	  <tr>
+	    <th>Real</th>
+	    <td class="temp-min">?</td>
+	    <td class="temp-current">?</td>
+	    <td class="temp-max">?</td>
+	  </tr>
+	  <tr>
+	    <th>Feels Like</th>
+	    <td class="feels-min">?</td>
+	    <td class="feels-current">?</td>
+	    <td class="feels-max">?</td>
+	  </tr>
+	</table>
+      </section>
+
+      <section class="humidity-container">
+	<h2>Humidity</h2>
+	<b class="humidity-text"></b>
+      </section>
+
+      <section class="wind-container">
+	<h2>Wind Speed</h2>
+	<b class="wind-text"></b>
+      </section>
+
+      <search>
+	<form aria-label="Location weather search">
+	  <label for="location-search">Location</label>
+	  <input type="search"
+		 name="location-search"
+		 id="location-search"
+		 placeholder="Enter a location..."
+		 aria-label="Location search"/>
+	  <button type="submit" id="search-btn">Search</button>
+	</form>
+      </search>
+    </main>
   </body>
 </html>
