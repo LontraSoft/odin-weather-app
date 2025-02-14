@@ -7,10 +7,10 @@ class TemperatureData {
 }
 
 class WeatherData {
-    constructor(conditions, feelsLikeTemp, temp, humidity, windSpeed) {
+    constructor(conditions, feelsLike, temperature, humidity, windSpeed) {
 	this.conditions = conditions;
-	this.feelsLikeTemp = feelsLikeTemp;
-	this.temp = temp;
+	this.feelsLike = feelsLike;
+	this.temperature = temperature;
 	this.humidity = humidity;
 	this.windSpeed = windSpeed;
     }
