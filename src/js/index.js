@@ -1,3 +1,4 @@
+import * as HTML_CONSTANTS from './html_constants';
 import VisualCrossingInterface from './virtual_crossing';
 
 let visualCrossing = new VisualCrossingInterface(window);
