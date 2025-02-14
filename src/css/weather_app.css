@@ -1,3 +1,68 @@
+p, b, td, th {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-template:
+	'. condition .' 1fr  
+	'humidity temperature wind' 1fr
+	'. search .' 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.condition-section,
+.temperature-section,
+.humidity-section,
+.wind-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.condition-section {
+    grid-area: condition;
+}
+
+.temperature-section {
+    grid-area: temperature;
+}
+
+.humidity-section {
+    grid-area: humidity;
+}
+
+.wind-section {
+    grid-area: wind;
+}
+
+search {
+    grid-area: search;
+}
+
 h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+b {
+    text-align: center;
+}
+
+.temperature-section h2 {
+    text-align: center;
 }
