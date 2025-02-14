@@ -1,3 +1,5 @@
+import '../css/weather_app.css';
+
 import * as HTML_CONSTANTS from './html_constants';
 import VisualCrossingInterface from './virtual_crossing';
 
