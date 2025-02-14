@@ -4,6 +4,12 @@ import VisualCrossingInterface from './virtual_crossing';
 let visualCrossing = new VisualCrossingInterface(window);
 
     });
+function attachEventHandlers() {
+    const searchButtonNode = document.getElementById(HTML_CONSTANTS.LOCATION_SUBMIT_ID);
+    
+    searchButtonNode.addEventListener('click', submitWeatherSearch);
+}
+
 function runInitialWeatherFetch() {
     visualCrossing.fetchLocationWeather('Tulsa,OK')
 	.then(res => {
@@ -15,6 +21,7 @@ function runInitialWeatherFetch() {
 }
     
 function initialize() {
+    attachEventHandlers();
     runInitialWeatherFetch();
 }
 
