@@ -26,19 +26,11 @@ export default class VisualCrossingInterface {
     }
 
     async fetchLocationWeather(location) {
-	try {
-	    const FETCH_URL = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?&key=${API_KEY}&contentType=json`;
-	    let response = await fetch(FETCH_URL, {mode: 'cors'});
-	    let data = await response.json();
-	    let dayData = data.days[0];
-
-	    return this.#parseDayData(dayData);
-	    
-	    this.win.console.log(response);
-	    this.win.console.log(data);
-	}
-	catch {
-	    throw new Error('Could not fetch weather data for location');
-	}
+	const FETCH_URL = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?&key=${API_KEY}&contentType=json`;
+	let response = await fetch(FETCH_URL, {mode: 'cors'});
+	let data = await response.json();
+	let dayData = data.days[0];
+	
+	return this.#parseDayData(dayData);
     }
 }
